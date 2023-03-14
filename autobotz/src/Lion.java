@@ -5,6 +5,8 @@ class Lion {
     String color;
 
     Lion(String name, int age, String color){
+//        This is a constructor that forces you to input parameters
+//        "this.blah" is a keyword in Java that says for "this" INSTANCE of the class you created, its parameters are x,y,z, etc
         this.name = name;
         this.age = age;
         this.color = color;
@@ -23,7 +25,7 @@ class MakeLion{
 
     public static void main(String[] args) {
 
-        Lion mahir = new Lion("mahir",28,"yellow");
+        Lion mahir = new Lion("mahir",28,"yellow"); // reference to line 8-12
         System.out.println("Creating a lion named " + mahir.getName() + " of age " + mahir.age + " of color " + mahir.color);
 
         mahir.setName("Mahir Ahmed");
@@ -40,11 +42,13 @@ class MakeLion{
 // Updated a lion named Mahir Ahmed of age 28 of color yellow
 // You updated the Lion INSTANCE to change its name to Mahir Ahmed using a SETTER (setName) and then got the updated name using a GETTER
 // (getName)
+
+
 class Wolf{
     private String name;
     int age;
     String color;
-
+// There are no forced parameters, so when you create this new wolf it will dwfault to null or 0 for its values
     public void setName(String newname){
         this.name = newname;
     }
@@ -60,7 +64,7 @@ class MakeWolf{
 
     public static void main(String[] args) {
 
-        Wolf mahir = new Wolf();
+        Wolf mahir = new Wolf(); // reference to line 51
         System.out.println("Creating a lion named " + mahir.getName() + " of age " + mahir.age + " of color " + mahir.color);
 
         mahir.setName("Mahir Ahmed");
