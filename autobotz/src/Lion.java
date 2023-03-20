@@ -1,29 +1,7 @@
-class Animal {
-    //CLASS WITH FORCED PARAMETER CONSTRUCTOR
-    private String name;
-    int age;
-    String color = "red";
-
-    Animal(String name, int age, String color){
-//        This is a constructor that forces you to input parameters
-//        "this.blah" is a keyword in Java that says for "this" INSTANCE of the class you created, its parameters are x,y,z, etc
-        this.name = name;
-        this.age = age;
-        this.color = color;
-    }
-    public void setName(String newname){
-        this.name = newname;
-    }
-
-    public String getName(){
-        return this.name;
-    }
-
-}
 
 
 
-class Lion  {
+class Lion  extends Animal {
 //CLASS WITH FORCED PARAMETER CONSTRUCTOR
     private String name;
     int age;
