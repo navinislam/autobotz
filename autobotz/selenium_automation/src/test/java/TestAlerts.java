@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
 
-class TestPages extends BasePage{
+class TestAlerts extends BasePage{
 
         private String alertBox = "alertexamples";
         private String confirmBox = "confirmexample";
