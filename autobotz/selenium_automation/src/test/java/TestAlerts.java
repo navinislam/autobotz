@@ -22,7 +22,7 @@ class TestAlerts extends BasePage{
          driver.get(url);
 
          List<WebElement> alerts = driver.findElements(By.className(styled_css_button));
-         System.out.println(alerts.size());
+//         System.out.println(alerts.size());
 
          for (WebElement webElement : alerts) {
              String id = webElement.getAttribute("id");

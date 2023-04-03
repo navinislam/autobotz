@@ -27,6 +27,8 @@ public class TestForms extends BasePage{
 
     @Test
     void userFillsForm() throws InterruptedException {
+
+
         driver.get(url);
 // Username field
         sendKeysToField(usernameField,"Myusername");
@@ -37,7 +39,6 @@ public class TestForms extends BasePage{
         sendKeysToField(commentsField, "Hello world");
 // Check boxes
         List<WebElement> checkBoxesList = driver.findElements(By.cssSelector(checkboxes));
-
         for (WebElement webElement : checkBoxesList) {
             String checked = webElement.getAttribute("checked");
             String checkboxSelector = "[value='"+ webElement.getAttribute("value") +"']";
@@ -66,6 +67,7 @@ public class TestForms extends BasePage{
         }
 
         System.out.println(submittedValues);
+        Thread.sleep(10000);
 
     }
 

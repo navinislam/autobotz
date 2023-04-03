@@ -9,9 +9,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.time.Duration;
 
-public class BasePage {
+public class HomePage {
     WebDriver driver;
 
     @BeforeAll
@@ -23,7 +24,6 @@ public class BasePage {
     void setup() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
-        options.addArguments("--headless=new");
         driver = WebDriverManager.chromedriver().capabilities(options).create();
     }
 
