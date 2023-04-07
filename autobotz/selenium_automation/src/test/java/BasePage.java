@@ -33,6 +33,10 @@ public class BasePage {
     }
 
 
+    void goToURL(String url){
+        driver.get(url);
+    }
+
      void sendKeysToField(String css_selector, String input){
 
         driver.findElement(By.cssSelector(css_selector)).sendKeys(input);
